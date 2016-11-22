@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--*************************************************************************-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport Scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product MGR</title>
+    <!-- Fa-Icons Latest compiled  -->
+    <script src="https://use.fontawesome.com/ab9918b661.js"></script>
+    <!-- Bootstrap"s:Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  </head>     
+<body>
+<!--*************************************************************************-->  
+
+
+
+<!--
+ |******************************************************************************
+ |  HOME PAGE CONTENT:
+ |******************************************************************************
+-->
+ <div class="syncNode">
+    <div class="childSyncNode">
+        
+<!-- Content -->
+  
+    <div class="container-fluid">
+        <div class="row">
+            
+            
+            <!-- Log Out -->
+            <div style="position: absolute; top: 2%; right: 3%; z-index: 10000">
+                <a class="btn btn-default" href="/app/logout/" role="button">
+                    <i class="fa fa-sign-out fa-lg" aria-hidden="true" ></i>log out 
+                </a>
+            </div>
+            
+            
+            <!-- Search AWS Api --> 
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+                  
+                <br/>
+                <br/>
+                <h1 class="page-header text-center"> Amazon <small>search.</small> </h1>
+                <br />
+                <!-- Form: Search Amazon -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-9 col-md-offset-2 col-lg-9 col-lg-offset-2">
+                        <br/>
+                        <div class="form-group">
+                        <form action="/app/aws/" method="POST" class="search" >
+                            <div class="input-group search-group">
+                                <input type="hidden" name="ItemPage" value="1" >
+                                <input type='text' name="Keywords" class="form-control" id="searchBox" placeholder="search for ...">
+                                  
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-default" value="search" id="searchBtn" >
+                                         Search
+                                     </button>
+                                </div>
+                                  
+                            </div>
+                            <div class='help-block text-center'>Search by Keywords or ASIN</div>
+                        </form>
+                        </div>     
+                    </div>
+                </div>
+                  
+                <!-- AJAX -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                          
+    
+                        <!-- Amazon Results Table -->
+                        <div id="resultsBox">
+                              
+                        </div>
+     
+                    </div>
+                </div>
+                
+               <br/> 
+            </div>
+            
+            
+            
+            <!-- All Items -->
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+
+                <!-- Heading -->
+                <br/>
+                <br/>
+                <h1 class="page-header text-center"> Database <small>records.</small> </h1>
+                
+                <!-- DataBase Results Table -->
+                <div class="text-right">
+                    <button class="btn btn-default" id="moreRecords">
+                        <i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i> Show All
+                    </button>
+                </div>
+                <br/>
+                <div class="panel panel-default">
+                    
+                    <div class="hidden-md hidden-lg " id="content-mob"> 
+                      <!-- Mobile UI -->
+                    </div>
+                    
+                    <table class='hidden-xs hidden-sm table table-bordered table-hover'>
+                        <thead>
+                            <th class='info'> Price: </th>
+                            <th class='info'> MPN:   </th>
+                            <th class='info'> Title: </th>
+                            <th class='info'> ASIN:  </th>
+                            <th class='info'> &nbsp;</th>
+                        </thead>
+
+                          <!--  Desktop -->
+                        <tbody id="content-des" >
+                            <!--  Desktop UI -->
+                        </tbody>  
+                        
+                    </table>
+                    
+                </div>
+                <br/>
+            </div>
+            
+            
+        </div>    
+    </div>
+
+<!--*************************************************************************-->
+<!-- Application Resources --> 
+<!-- jQuery Lib Necessary For Bootstrap"s JS Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap"s Javascript Plugin -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+<!--*************************************************************************-->   
+<!-- File Resources --> 
+    <script src="../public/js/main.js"></script> 
+    </div>    
+</div>
+</body>
+</html>
+      

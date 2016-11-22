@@ -1,0 +1,21 @@
+
+
+{
+  
+    "autoload":
+    {
+
+        "psr-4": 
+        {
+            "App\\": "app/"
+        },
+
+        "files": 
+        [
+            "app/core/collections.php" ,
+            "app/core/minions.php"
+        ]
+
+    }
+    
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--*************************************************************************-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport Scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Product MGR</title>
+    <!-- Fa-Icons Latest compiled  -->
+    <script src="https://use.fontawesome.com/ab9918b661.js"></script>
+    <!-- Bootstrap"s:Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  </head>     
+<body>
+<!--*************************************************************************-->  
+
+<div class="syncNode">
+    <div class="childSyncNode">
+        
+        
+<!-- Header  -->
+   
+    <div class="well " style="padding: 10px;  " >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3 class="textl-left" style="margin-top: 15px">
+                        <small><i style="color: crimson;">Beta!</i></small> 
+                        <br/>
+                        Product <small> Manager </small></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h4 class="text-right" style="margin-top: 15px">
+                        Welcome!
+                    </h4>
+                </div>
+            </div>    
+        </div>    
+    </div>
+
+    <br/>
+        
+<!-- Log In Panel  -->
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Log In</div> 
+                        <div class="panel-body" >
+                            <form class="logIn form-horizontal"  method="POST" action="app/login">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">User Name</label>
+
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="userName" id="userName">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Password</label>
+
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" name="password" id="password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class=" text-center">
+                                        <button type="submit" class="btn btn-default">
+                                            <i class="fa fa-btn fa-sign-in fa-lg"></i>Login
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--*************************************************************************-->
+<!-- Application Resources --> 
+<!-- jQuery Lib Necessary For Bootstrap"s JS Plugins -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap"s Javascript Plugin -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+<!--*************************************************************************-->   
+<!-- File Resources --> 
+        <script src="../public/js/login.js"></script> 
+    </div>
+</div>
+
+
+</body>
+</html>
